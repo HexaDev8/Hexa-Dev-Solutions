@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hexa Dev Solutions</title>
+        <meta name="description" content="Hexa Dev Solutions is a dedicated web development company creating modern, responsive, and high-performance websites. We deliver secure, scalable, and impactful web solutions from personal portfolios to enterprise-level platforms.">
+        <meta name="keywords" content="Hexa Dev Solutions, Web Development, Responsive Websites, Modern Web Design, High-Performance Websites, Scalable Web Solutions, Secure Web Development, Enterprise Web Platforms, Portfolio Websites, End-to-End Web Solutions, Online Presence, Clean Design, Reliable Development">
+        <meta name="author" content="Hexa Dev Solutions">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/images/favicon.png" rel="icon" type="image/png"/>
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Inter Font from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- Logo -->
+            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="header Logo"></a></div>
+
+            <!-- Navigation -->
+            <nav>
+            <ul>
+                <li><a href="index.html" class="a">Home</a></li>
+                <li><a href="services.html" class="active">Our Services</a></li>
+                <li><a href="about.html" class="a">About Us</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact Us</a></li>
+            </ul>
+            </nav>
+
+            <!-- Hamburger icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Mobile nav -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="close-btn" id="closeBtn">&times;</div>
+                <a href="index.html">Home</a>
+                <a href="services.html" class="active">Our Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </header>
+        <main>
+            <section style="background-color:#105521;"><br>
+                <div class="container mx-auto max-w-7xl">
+                    <div class="flex flex-col lg:flex-row items-center lg:items-start space-y-12 lg:space-y-0 lg:space-x-16">
+                        <!-- Left Content -->
+                        <div class="flex-1 max-w-3xl">
+                            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-center text-white" style="line-height:1.5">Fast, Scalable, and Secure Web Solutions</h1>
+                            <p class="text-lg md:text-xl text-gray-400 mb-8 text-justify mx-4">Our development team builds robust and scalable websites optimized for speed and security. Whether you need a dynamic business site or an advanced web application, we deliver solutions that meet your goals and grow with your business.</p>
+                            <div class="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16 justify-center lg:justify-center">
+                                <div class="flex flex-col items-center lg:items-center text-center lg:text-center">
+                                    <p class="text-4xl md:text-5xl" style="color: #00c853; font-weight: 900;">99.9%</p><br>
+                                    <p class="text-lg md:text-xl text-white" style="font-weight: 900;">Website Uptime Guarantee</p>
+                                </div>
+                                <div class="flex flex-col items-center lg:items-center text-center lg:text-center">
+                                    <p class="text-4xl md:text-5xl" style="color: #00c853; font-weight: 900;">3x</p><br>
+                                    <p class="text-lg md:text-xl text-white" style="font-weight: 900;">Faster Load Times</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Image/Illustration -->
+                        <div class="flex-1 flex justify-center lg:justify-center rounded-lg"> <img src="assets/images/services.png" alt="Web solutions illustration" class="max-w-full w-3/4 h-auto"> </div>
+                    </div>
+                </div>
+            </section><br>
+            <!-- Services Section -->
+            <section class="py-20 px-4">
+                <div class="container mx-auto max-w-7xl">
+                    <div class="text-center mb-12">
+                        <h2 class="text-6xl font-bold text-black">Our Services</h2><br><br>
+                        <p class="text-2xl mt-2 text-gray-600">Comprehensive Digital Solutions Tailored to Your Business Needs</p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                        <!-- Service Card 1: Web Design -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4 space-x-4">
+                                <div class="text-2xl text-gray-700">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">Web Design</h3>
+                            </div>
+                            <p class="text-gray-500">
+                                Custom and modern designs that captivate and engage your audience.
+                            </p>
+                        </div>
+
+                        <!-- Service Card 2: Web Development -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4 space-x-4">
+                                <div class="text-2xl text-gray-700">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">Web Development</h3>
+                            </div>
+                            <p class="text-gray-500">
+                                Robust and scalable websites built with latest technologies.
+                            </p>
+                        </div>
+
+                        <!-- Service Card 3: E-commerce Solutions -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4 space-x-4">
+                                <div class="text-2xl text-gray-700">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">E-commerce Solutions</h3>
+                            </div>
+                            <p class="text-gray-500">
+                                Feature-rich online stores designed to boost your sales.
+                            </p>
+                        </div>
+
+                        <!-- Service Card 4: Website Maintenance -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4 space-x-4">
+                                <div class="text-2xl text-gray-700">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">Website Maintenance</h3>
+                            </div>
+                            <p class="text-gray-500">
+                                Ensuring your website stays secure, updated, and optimized.
+                            </p>
+                        </div>
+
+                        <!-- Service Card 5: Consultation -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4 space-x-4">
+                                <div class="text-2xl text-gray-700">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">Consultation</h3>
+                            </div>
+                            <p class="text-gray-500">
+                                Expert guidance to bring your digital vision to life.
+                            </p>
+                        </div>
+
+                        <!-- Service Card 6: SEO Optimization -->
+                        <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1">
+                            <div class="flex items-center mb-4 space-x-4">
+                                <div class="text-2xl text-gray-700">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-800">SEO Optimization</h3>
+                            </div>
+                            <p class="text-gray-500">
+                                Improving website's visibility and search engine rankings.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Left Section -->
+                <div class="footer-left"><img class="footer-logo" src="assets/images/logo.png" alt="footer Logo"></div>
+
+                <!-- Middle Section -->
+                <div class="footer-middle">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><p><a href="index.html">Home</a></p></li>
+                        <li><p><a href="services.html">Our Services</a></p></li>
+                        <li><p><a href="about.html">About Us</a></p></li>
+                        <li><p><a href="contact.html">Contact Us</a></p></li>
+                    </ul>
+                </div>
+
+                <!-- Right Section -->
+                <div class="footer-right">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><p>+94 70 441 7871</p></li>
+                        <li><p>+94 76 939 0356</p></li>
+                        <li><p>+94 76 098 2966</p></li>
+                        <li><p>hexadevsolutions@gmail.com</p></li>
+                        <li>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/hexa-dev-solutions/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/hexadev_solutions/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/Hexameeeee"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom"><center><p>© 2025 Hexa Dev Solutions. All Rights Reserved.</p></center></div>
+        </footer>
+
+        <!-- Script -->
+        <script src="assets/script.js"></script>
+    </body>
+</html>

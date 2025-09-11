@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hexa Dev Solutions</title>
+        <meta name="description" content="Hexa Dev Solutions is a dedicated web development company creating modern, responsive, and high-performance websites. We deliver secure, scalable, and impactful web solutions from personal portfolios to enterprise-level platforms.">
+        <meta name="keywords" content="Hexa Dev Solutions, Web Development, Responsive Websites, Modern Web Design, High-Performance Websites, Scalable Web Solutions, Secure Web Development, Enterprise Web Platforms, Portfolio Websites, End-to-End Web Solutions, Online Presence, Clean Design, Reliable Development">
+        <meta name="author" content="Hexa Dev Solutions">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/images/favicon.png" rel="icon" type="image/png"/>
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- Inter Font from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <!-- Logo -->
+            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="header Logo"></a></div>
+
+            <!-- Navigation -->
+            <nav>
+            <ul>
+                <li><a href="index.html" class="a">Home</a></li>
+                <li><a href="services.html" class="a">Our Services</a></li>
+                <li><a href="about.html" class="a">About Us</a></li>
+                <li><a href="contact.html" class="contact-abtn">Contact Us</a></li>
+            </ul>
+            </nav>
+
+            <!-- Hamburger icon -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- Mobile nav -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="close-btn" id="closeBtn">&times;</div>
+                <a href="index.html">Home</a>
+                <a href="services.html">Our Services</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html" class="active">Contact Us</a>
+            </div>
+        </header>
+        <!-- Main Section -->
+        <main class="main">
+            <!-- Hero Section -->
+            <section class="container mx-auto max-w-8xl bg-white rounded-3xl shadow-xl overflow-hidden p-8 md:p-12 lg:p-16">
+                <div class="flex flex-col lg:flex-row items-center lg:space-x-12">
+                    
+                    <!-- Image/Illustration Section -->
+                    <div class="relative w-full max-w-md"><img src="assets/images/index.png" alt="Illustration of a person interacting with screens" class="w-full h-auto rounded-xl" /></div>
+
+                    <!-- Content Section -->
+                    <div class="w-full text-center space-y-6">
+                        <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight" style="line-height: 1.5;text-align: center;">Optimized for All Devices and Platforms</h2>
+                        <p class="text-gray-600 text-lg md:text-xl" style="text-align: justify;">In today's mobile-first world, we create responsive designs that look and perform flawlessly on any device. From desktops to smartphones, our websites provide a seamless user experience, ensuring your audience stays engaged no matter how they access your site.</p>
+                        
+                        <!-- Stats Section -->
+                        <div class="flex flex-col sm:flex-row items-left justify-left lg:justify-left space-y-6 sm:space-y-0 sm:space-x-8 mt-8 text-gray-600 font-extrabold">
+                            <div class="justify-left text-left">
+                                <ul class="unorlis">
+                                    <li><span class="checkmark-circle">&#10003;</span> Seamless experience across all screen sizes.</li>
+                                    <li><span class="checkmark-circle">&#10003;</span> Faster load times on mobile devices.</li>
+                                    <li><span class="checkmark-circle">&#10003;</span> Pixel-perfect designs for high-quality displays.</li>
+                                    <li><span class="checkmark-circle">&#10003;</span> Enhanced accessibility for a broader audience.</li>
+                                    <li><span class="checkmark-circle">&#10003;</span> Future-proof solutions adaptable to new platforms.</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </section><br>
+            <section class="flex flex-col lg:flex-row items-center justify-center space-y-8 lg:space-y-0 lg:space-x-12 mx-auto" style="width: 80%;">
+                <!-- Image Placeholder -->
+                <div class="w-full lg:w-1/2 p-4 flex justify-center"><div class="relative w-full max-w-md aspect-[4/3]"><img src="assets/images/cform.png" alt="Placeholder for contact form image" class="rounded-xl w-full h-full object-cover"></div></div>
+
+                <!-- Contact Form -->
+                <div class="w-full lg:w-1/2 bg-green-500 rounded-3xl shadow-2xl p-8 md:p-12 items-center justify-center" style="padding-top: 35px !important; padding-bottom: 35px !important;">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 md:mb-8">Let's talk</h2>
+                    
+                    <form id="contactForm">
+                        <!-- Name Field -->
+                        <div class="mb-4">
+                            <label for="name" class="block text-white font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700" required>
+                        </div>
+                        <!-- Email Field -->
+                        <div class="mb-4">
+                            <label for="email" class="block text-white font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-700" required>
+                        </div>
+                        <!-- Message Field -->
+                        <div class="mb-6">
+                            <label for="message" class="block text-white font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-green-700" required></textarea>
+                        </div>
+
+                        <!-- Submit Button with mailto -->
+                        <a id="submitLink" target="_blank" href="#" class="w-full block bg-white text-green-600 font-bold text-center py-3 rounded-xl shadow-md hover:bg-green-100 transition duration-300">Submit</a>
+                    </form>
+
+                    <div class="flex items-center my-6">
+                        <div class="flex-grow border-t border-green-400"></div>
+                        <span class="mx-4 text-white font-medium">Or, speak with our team directly</span>
+                        <div class="flex-grow border-t border-green-400"></div>
+                    </div>
+
+                    <!-- WhatsApp Links -->
+                    <div class="space-y-3">
+                        <a href="https://wa.link/qdt3oo" class="w-full block bg-white text-green-600 font-bold text-center py-3 rounded-xl shadow-md hover:bg-green-100 transition duration-300"><i class="fab fa-whatsapp mr-2"></i>New Projects</a>
+                        <a href="https://wa.link/696t2t" class="w-full block bg-white text-green-600 font-bold text-center py-3 rounded-xl shadow-md hover:bg-green-100 transition duration-300"><i class="fab fa-whatsapp mr-2"></i>Technical Support</a>
+                        <a href="https://wa.link/vrjuo7" class="w-full block bg-white text-green-600 font-bold text-center py-3 rounded-xl shadow-md hover:bg-green-100 transition duration-300"><i class="fab fa-whatsapp mr-2"></i>Billing Questions</a>
+                        </a>
+                    </div>
+                </div>
+            </section><br>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Left Section -->
+                <div class="footer-left"><img class="footer-logo" src="assets/images/logo.png" alt="footer Logo"></div>
+
+                <!-- Middle Section -->
+                <div class="footer-middle">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><p><a href="index.html">Home</a></p></li>
+                        <li><p><a href="services.html">Our Services</a></p></li>
+                        <li><p><a href="about.html">About Us</a></p></li>
+                        <li><p><a href="contact.html">Contact Us</a></p></li>
+                    </ul>
+                </div>
+
+                <!-- Right Section -->
+                <div class="footer-right">
+                    <h2>Contact Us</h2>
+                    <ul>
+                        <li><p>+94 70 441 7871</p></li>
+                        <li><p>+94 76 939 0356</p></li>
+                        <li><p>+94 76 098 2966</p></li>
+                        <li><p>hexadevsolutions@gmail.com</p></li>
+                        <li>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/hexa-dev-solutions/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/hexadev_solutions/?utm_source=ig_web_button_share_sheet"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/Hexameeeee"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="footer-bottom"><center><p>© 2025 Hexa Dev Solutions. All Rights Reserved.</p></center></div>
+        </footer>
+
+        <!-- Script -->
+        <script src="assets/script.js"></script>
+    </body>
+</html>
